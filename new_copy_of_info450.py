@@ -14,16 +14,14 @@ Original file is located at
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-from google.colab import drive
 
-drive.mount('/content/drive')
-IPUMS_csv_file_path = '/content/drive/MyDrive/INFO450/IPUMS.csv'
-OCC_csv_file_path = '/content/drive/MyDrive/INFO450/OccupationCodes.csv'
+IPUMS_csv_file_path = 'IPUMS.csv'
+OCC_csv_file_path = 'OccupationCodes.csv'
 
 """Imported all of the libraries and google drive. Mounted google drive so that we can all colaborate on the same notebook."""
 
-df = pd.read_csv('/content/drive/MyDrive/INFO450/IPUMS.csv')
-OCC_df = pd.read_csv('/content/drive/MyDrive/INFO450/OccupationCodes.csv')
+df = pd.read_csv('IPUMS.csv')
+OCC_df = pd.read_csv('OccupationCodes.csv')
 
 """converted csv to dataframes"""
 
