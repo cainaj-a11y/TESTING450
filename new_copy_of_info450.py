@@ -361,10 +361,3 @@ st.dataframe(df)
 # st.plotly_chart(histogram)
 # 
 # st.dataframe(df)
-
-!npm install localtunnel
-!streamlit run app.py --server.address=localhost &>/content/logs.txt &
-import urllib
-print("Password/Endpoint IP for localtunnel is:",urllib.request.urlopen('https://ipv4.icanhazip.com').read().decode('utf8').strip("\n"))
-
-!npx localtunnel --port 8501
